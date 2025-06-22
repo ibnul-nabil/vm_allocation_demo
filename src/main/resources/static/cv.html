@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibnul Islam - CV | BUET CSE 4th Year</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+        }
+        h1 {
+            color: var(--secondary);
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+        .title {
+            color: var(--primary);
+            font-weight: 400;
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        .skill-category h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .skill-item {
+            background: #e8f4fc;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid #d6eaf8;
+        }
+        .skill-item:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+        }
+        .education {
+            font-weight: 500;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        .university {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .year {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .about-text {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .skills-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Ibnul Islam</h1>
+        <div class="title">4th Year Computer Science & Engineering Student</div>
+    </header>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="education">Bachelor of Science in Computer Science & Engineering</div>
+        <div class="university">Bangladesh University of Engineering and Technology (BUET)</div>
+        <div class="year">2020 - Present (4th Year)</div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <span class="skill-item">C</span>
+                <span class="skill-item">C++</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Go (Golang)</span>
+                <span class="skill-item">Rust</span>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">Spring Boot</span>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">GitHub</span>
+                <span class="skill-item">Docker</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>About Me</h2>
+        <div class="about-text">
+            <p>I am Ibnul Islam, a passionate 4th year Computer Science & Engineering student at BUET with strong expertise in multiple programming languages and frameworks. My technical journey includes systems programming, web development, and software engineering principles.</p>
+            <p>I enjoy solving complex problems and building efficient, scalable software solutions. My diverse skill set allows me to work across different domains of computer science and adapt to new technologies quickly.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
